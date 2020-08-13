@@ -106,7 +106,6 @@ Navbar
   .main-navbar ul{
      max-width: 1170px;
      margin:0 auto;
-     background: var(--mainWhite);
      display: grid;
      grid-template-columns: repeat(4, 1fr);
   }
