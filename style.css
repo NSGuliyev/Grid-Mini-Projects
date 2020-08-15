@@ -231,3 +231,35 @@ Cards CSS - Big Screen with minmax and auto-fit,auto-fill
   /* Four column layout */
   grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
 }
+
+/* 
+=====
+Tiles
+=====
+*/
+
+.tiles {
+  padding: 4rem 0;
+}
+
+.tiles-center {
+  width: 95vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+  display: grid;
+  grid-row-gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tiles-center{
+     grid-template-columns: 1fr 1fr;
+     grid-column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tiles-center{
+     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
