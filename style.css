@@ -216,6 +216,12 @@ Cards CSS - Big Screen with minmax and auto-fit,auto-fill
 =========================================================
 */
 
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
 .cards-center {
   display: grid;
   grid-column-gap: 2rem;
